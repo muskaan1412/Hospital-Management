@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,5 +88,198 @@
 
     </div>
     
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy</title>
+
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="sidebar-nav">
+        <div class="logo">
+            <a href="#">
+                <h1>Appointment</h1>
+            </a>
+            <a href="#">
+                <img src="img/logo-2.png">
+            </a>
+        </div>
+        <div class="profile">
+            <div class="avtar">
+                <img src="img/avtar.png">
+            </div>
+            <div class="name-pos">
+                <h3>Dr. Nithyananda</h3>
+                <h5>Company Head</h5>
+            </div>
+        </div>
+        <div class="side-nav">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <span><i class="fab fa-wpforms"></i></span>
+                    <a href="book_app.html">Book Appointments</a>
+                </li>
+                <li>
+                    <span><i class="fab fa-wpforms"></i></span>
+                    <a href="#">Patient Details</a>
+                </li>
+                <!-- <li>
+                    <span><i class="fas fa-table"></i></span>
+                    <a href="#">Data Table</a>
+                </li>
+                <li>
+                    <span><i class="far fa-chart-bar"></i></span>
+                    <a href="#">Chart</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-cubes"></i></span>
+                    <a href="#">Components</a>
+                </li> -->
+                <li>
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    <a href="#">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="head-inner">
+            <div class="left-part">
+                <form>
+                    <input type="text" placeholder="Search.." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="right-part">
+                <ul>
+                    <li class="user">
+                        <div class="avtar">
+                            <img src="img/avtar.png" alt="" srcset="">
+                        </div>
+                        <div class="name-pos">
+                            <h2>Dr. Nithyananda</h2>
+                        </div>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-envelope"></i></span>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-bell"></i></span>
+                    </li>
+                    <li>
+                        <span class="bar"><i class="fas fa-bars"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_contant">
+
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <h3>Book Appointments</h3>
+                </li>
+            </ul>
+        </div>
+        
+       <div class="container">
+
+
+            <div class="container-form">
+                <form action="#">
+                    <div class="form-field">
+                        <p>Name</p>
+                        <input type="text" placeholder="Your Name">
+                    </div><br />
+            
+                    <div class="form-field">
+                        <p>Age</p>
+                        <input type="age" placeholder="Your Age">
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Gender</p>
+                        <select name="select" id="#">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Others</option>
+                        </select>
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Phone</p>
+                        <input type="phone" placeholder="Your Number">
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Address</p>
+                        <input type="address" placeholder="Your Address">
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Date Of Appointment</p>
+                        <input type="date">
+                    <div class="form-field"><br />
+
+                    </div>
+                        <p>Time</p>
+                        <input type="time">
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Treatment Condition</p>
+                        <input type="treatment Condition" placeholder="">
+                    </div><br />
+
+                    <div class="form-field">
+                        <p>Doctor</p>
+                        <select name="select" id="#">
+                        <option value="1">Dr. Nithyananda</option>
+                        <option value="2">Dr. 2</option>
+                        <option value="3">Dr. 3</option>
+                        <option value="4">Dr. 4</option>
+                        <option value="5">Dr. 5</option>
+                        </select>
+                    </div><br />
+
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+                                                
+  
+    
+    <script src="js/jquery.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".bar").click(function(){
+            $(".sidebar-nav").toggleClass("hide")
+            $("header , .main_contant").toggleClass("slide-left")
+        })
+        });
+
+
+    </script>
+                                       
 </body>
 </html>
